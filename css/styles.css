@@ -18,9 +18,17 @@ body{
 nav{
   display:flex;
   justify-content: space-around;
+  font-size: 40px;
   padding: 20px 0;
   background-color:white;
   border: 1px solid lightgray
+}
+
+nav input{
+  font-size:30px;
+  text-align:center;
+  width:280px;
+  height: 40px;
 }
 
 .post{
@@ -145,21 +153,14 @@ align-items:center;
 
 
 
-
-
-
-
-
 @media screen and (max-width:1000px) {
   .right-side {
     display: none;
   }
+}
 
-
-
-
-
-
-
-
+@media screen and (max-width:690px){
+  nav input {
+    display:none;
+  }
 }
