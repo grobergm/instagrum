@@ -7,13 +7,15 @@
 }
 
 .post-photo{
-  width:700px;
+  width:70%;
+  height:100%;
 }
 
 .post-info{
   display:flex;
   flex-direction:column;
-  height:700px;
+  height:100%;
+
   background-color:white;
 
 }
@@ -46,8 +48,14 @@ height:30px;
   padding-bottom:10px;
 }
 
+@media screen and (max-width: 1000px) {
+  .post-container{
+    width:calc(100% - 40px);
+    height:calc(100% - 40px);
+  }
+}
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:750px){
   .post-container{
     flex-direction:column;
     height:auto;
@@ -59,7 +67,7 @@ height:30px;
   }
   .profile-info{
     position:absolute;
-    top:225px; 
+    top:225px;
   }
   .comments{
     display:none;
@@ -69,5 +77,8 @@ height:30px;
   }
   hr{
     display:none;
+  }
+  .post-photo{
+    width:700px;
   }
 }
